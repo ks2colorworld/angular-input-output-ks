@@ -12,4 +12,7 @@ export class CompContainerComponent implements OnInit {
   ngOnInit() {
   }
 
+  doSomething(event){
+    console.warn(event.value.name)
+  }
 }
