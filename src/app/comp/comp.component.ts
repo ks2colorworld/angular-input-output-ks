@@ -32,7 +32,7 @@ export class CompComponent implements OnInit {
   }
 
   getItem(){
-    const id =  null; // 11; 
+    const id =  11;//null; // 11; // 서버에서 요청할 데이터 key
     if(!id && !this.__item__){
       console.warn('데이터를 표시할 수 없음 - 요청방식 확인!')
       return;
@@ -45,7 +45,7 @@ export class CompComponent implements OnInit {
     timer(2000).subscribe(_=>{
       console.log(2)
       // id = 11에 해당하는 데이터로딩해 오는 것으로 간주함.
-      this._item = {name:'from data 1111'}
+      this._item = {name:'fromServer'}
     })
   }
 
